@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>我想大声对你说</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="./public/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="./public/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <!-- <div class="adcenter"><script src="http://www.cssmoban.com/include/new/ggad2_728x90.js"></script></div> -->
+  <!----start-header----->
+  <div class="header">
+    <div class="wrap">
+      <div class="header-top">
+        <!---start-top-nav---->
+        <div class="top-nav">
+          <div class="top-header">
+            <div class="logo">
+              <a href="./index.html">
+                <h1>我想大声对你说</h1>
+              </a>
+            </div>
+          </div>
+          <nav class="nav clearfix">
+            <a id="menu-toggle" class="anchor-link" href="#"><img src="./public/images/men-bars.png" alt="" /></a>
+            <ul class="simple-toggle" id="menu">
+              <!-- <li><a href="index.html">Home</a></li>
+			        	<li><a href="about.html">About</a></li>
+								<li><a href="services.html">Services</a></li> -->
+              <li><a href="./about.html">关于我们</a></li>
+              <!-- logo -->
+              <li class="logo">
+                <!-- <a href="./index.html">
+                  <h1>我想大声对你说</h1>
+                </a> -->
+                <a>
+                  <h1>我想大声对你说</h1>
+                </a>
+              </li>
+              <!-- logo -->
+              <!-- <li><a href="portfolio.html">Portfolio</a></li>
+			        	<li><a href="404.html">Careers</a></li>
+								<li><a href="contact.html">Contact</a></li> -->
+              <li><a href="./index.html">隐私政策</a></li>
+            </ul>
+          </nav>
+
+          <script type="text/javascript">
+            $(document).ready(function() {
+
+              $('#menu-toggle').click(function(e) {
+                $('#menu').toggleClass('open');
+                e.preventDefault();
+              });
+
+            });
+          </script>
+        </div>
+        <!---End-top-nav---->
+      </div>
+    </div>
+  </div>
+  <!----End-header----->
+
+  <!---start-content---->
+  <div class="content-bottom">
+    <div class="section group">
+      <!-- <div class="cont span_2_of_3">
+          <div class="services-desc-block">
+            <h3>Tricies pharetra magna</h3>
+            <p>Eent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes. Nulla dui. Fusce feugiat malesuada odio. </p>
+            <div class="more-info"><a href="#">More Info</a></div>
+          </div>
+          <div class="services-desc-block">
+            <h3>Cies retra odio</h3>
+            <p>Vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes. Nulla dui. Fusce feugiat malesuada odio. </p>
+            <div class="more-info"><a href="#">More Info</a></div>
+          </div>
+        </div> -->
+      <div class="rsidebar span_1_of_3"  style="margin: 0 auto;float:none">
+        <h3>联系我们</h3>
+        <div class="news-letter">
+          <form method="post" action="contact-post.html">
+            <span><label>您的称呼</label></span>
+            <span><input name="userName" type="text" class="textbox"></span>
+            <span><label>您的E-mail</label></span>
+            <span><input name="userEmail" type="text" class="textbox"></span>
+            <span><label>留言</label></span>
+            <span><textarea name="userMsg"></textarea></span>
+            <span><input type="submit" value="提交" id="submit"></span>
+            <script>
+              $('#submit').click(function(e) {
+                e.stopPropagation()
+                e.preventDefault()
+                if (!$('[name=userName]').val() || !$('[name=userEmail]').val() || !$('[name=userMsg]').val()) alert('请填写完整信息')
+                else alert('提交成功')
+              })
+            </script>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---End-content---->
+  <!---start-footer---->
+  <div class="footer">
+    <div class="wrap">
+      <div class="copy-right">
+        <p>Copyright &copy; 2019 Apple Inc. All rights reserved.</p>
+        <p>技术支持&客服：123456789@qq.com</p>
+      </div>
+    </div>
+  </div>
+  <!---End-footer---->
+
+</body>
+
+</html>
