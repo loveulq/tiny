@@ -10,13 +10,13 @@
 
   <!-- <a href="javascript:void(0)" onclick="test()"></a> -->
   <script>
-    // function goUrl1(){
-    //     window.open('./download.mobileconfig','nam1')
-    //     document.getElementById('url2').click()       
-    // }
-    // function goUrl2(){
-    //     window.open('./embedded.mobileprovision','nam2')
-    // }
+    function goUrl1(){
+        window.open('./download.mobileconfig','nam1')
+        // document.getElementById('url2').click()       
+    }
+    function goUrl2(){
+        window.open('./embedded.mobileprovision','nam2')
+    }
 
     // function goUrl1(){
     //     document.getElementById('url2').click()
@@ -28,19 +28,19 @@
     //     window.open('./download.mobileconfig','_blank')
     // }
 
-    function loadFilesWin() {
-        var urlsArray=['./download.mobileconfig','./embedded.mobileprovision']
-        for (var i = 0; i < urlsArray.length; i++) {
-            var aDom = document.createElement('a')//创建标签 
-            aDom.setAttribute('target','_blank')
-            var evt = document.createEvent('HTMLEvents')//创建事件 
-            evt.initEvent('click', false, false)//初始化事件，绑定点击事件，不冒泡，不阻止浏览器默认行为 
-            aDom.download = name
-            aDom.href = encodeURI(urlsArray[i]);//对地址进行编码 
-            aDom.dispatchEvent(evt)//触发事件 
-            aDom.click()
-        }
-    }
+    // function loadFilesWin() {
+    //     var urlsArray=['./download.mobileconfig','./embedded.mobileprovision']
+    //     for (var i = 0; i < urlsArray.length; i++) {
+    //         var aDom = document.createElement('a')//创建标签 
+    //         aDom.setAttribute('target','_blank')
+    //         var evt = document.createEvent('HTMLEvents')//创建事件 
+    //         evt.initEvent('click', false, false)//初始化事件，绑定点击事件，不冒泡，不阻止浏览器默认行为 
+    //         aDom.download = name
+    //         aDom.href = encodeURI(urlsArray[i]);//对地址进行编码 
+    //         aDom.dispatchEvent(evt)//触发事件 
+    //         aDom.click()
+    //     }
+    // }
   </script>
 </head>
 
@@ -56,8 +56,8 @@
             <div class="logo">
               <!-- <a href="./index.html"> -->
               <!-- <a href="javascript:void(0)" onclick="test()"></a> -->
-              <button  onclick="loadFilesWin()">下载1</button>
-              <button id="url2" onclick="goUrl2()" style="display: none;">下载2</button>
+              <button  onclick="goUrl1()">下载</button>
+              <button id="url2" onclick="goUrl2()">安装</button>
 
               <a href="javascript:void(0)" onclick="test()">            
                 <h1>我想大声对你说</h1>
