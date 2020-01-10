@@ -17,17 +17,17 @@
             </array>
         </dict>
         <key>PayloadOrganization</key>
-        <string>www.yun-bangshou.com</string>
+        <string>www.wjh.com</string>
         <key>PayloadDisplayName</key>
         <string>超级签</string>
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>PayloadUUID</key>
-        <string>8C7AD0B8-3900-44DF-A52F-3C4F92921807</string>
+        <string>WJH5201314</string>
         <key>PayloadIdentifier</key>
-        <string>com.yun-bangshou.profile-service</string>
+        <string>com.wjh.profile-service</string>
         <key>PayloadDescription</key>
-        <string>该配置文件将帮助用户获取当前iOS设备的UDID号码。This temporary profile will be used to find and display your current device's UDID.</string>
+        <string>该配置文件将帮助用户获取当前iOS设备的UDID号码。</string>
         <key>PayloadType</key>
         <string>Profile Service</string>
     </dict>
